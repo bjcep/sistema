@@ -1,4 +1,4 @@
-# Mixtech
+# TechMix
 
 # Sistema para lojas de informatica, Bruno, Renan e Vitor
 
