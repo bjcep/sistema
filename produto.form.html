@@ -8,10 +8,13 @@
   <meta name="author" content="">
   <link rel="icon" href="favicon.ico">
 
-  <title>Dashboard Template for Bootstrap</title>
+  <title>TechMix - Sistema para lojas de informatica</title>
 
   <!-- Bootstrap core CSS -->
   <link href="dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 
   <!-- Custom styles for this template -->
   <link href="dashboard.css" rel="stylesheet">
@@ -19,7 +22,7 @@
 
 <body>
   <nav class="navbar navbar-dark fixed-top bg-dark flex-md-nowrap p-0 shadow">
-    <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="#">Pedidex</a>
+    <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="#">TechMix</a>
 
     <ul class="navbar-nav px-3">
       <li class="nav-item text-nowrap">
@@ -35,25 +38,25 @@
           <ul class="nav flex-column">
             <li class="nav-item">
               <a class="nav-link" href="index.html">
-                <span data-feather="home"></span>
+                <span class="fa fa-home"></span>
                 Dashboard <span class="sr-only">(current)</span>
               </a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="pedidos.html">
-                <span data-feather="file"></span>
+                <span class="fa fa-archive"></span>
                 Pedidos
               </a>
             </li>
             <li class="nav-item">
               <a class="nav-link active" href="produtos.html">
-                <span data-feather="shopping-cart"></span>
+                <span class="fa fa-shopping-cart"></span>
                 Produtos
               </a>
             </li>
-            <li class="nav-item.">
+            <li class="nav-item">
               <a class="nav-link" href="clientes.html">
-                <span data-feather="users"></span>
+                <span class="fa fa-users"></span>
                 Clientes
               </a>
             </li>
@@ -80,19 +83,28 @@
             </div>
           </div>
 
-          <div class="form-row">
-            <div class="form-group col-md-6">
+            <div class="form-group col-md-12">
               <label for="inputCity">Preço</label>
               <input type="text" class="form-control" id="inputCity" placeholder="Preço do produto EX: R$ 1000,00">
             </div>
-            <div class="form-group col-md-6">
+            <div class="form-group col-md-12">
               <label for="inputCity">Estoque</label>
               <input type="text" class="form-control" id="inputCity" placeholder="Quantidade disponível no estoque EX: 35">
             </div>
-          </div>
+            <div class="form-group col-md-12">
+              <label for="inputEmail4">Código</label>
+              <input type="text" class="form-control" id="inputEmail4" placeholder="Código do produto">
+            </div>
 
-          <button type="submit" class="btn col-md-2 btn-primary">Salvar</button>
-          <a href="clientes.html" class="btn btn-danger">Cancelar</a>
+
+          <button type="submit" class="btn col-md-2 btn-primary">
+              <span class="fa fa-save"></span>
+            Salvar
+          </button>
+          <a href="clientes.html" class="btn btn-danger">
+            <span class="fa fa-ban"></span>
+          Cancelar
+        </a>
         </form>
       </main>
     </div>
@@ -107,43 +119,7 @@
   <script src="assets/js/vendor/popper.min.js"></script>
   <script src="dist/js/bootstrap.min.js"></script>
 
-  <!-- Icons -->
-  <script src="https://unpkg.com/feather-icons/dist/feather.min.js"></script>
-  <script>
-    feather.replace()
-  </script>
 
-  <!-- Graphs -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.min.js"></script>
-  <script>
-    var ctx = document.getElementById("myChart");
-    var myChart = new Chart(ctx, {
-      type: 'line',
-      data: {
-        labels: ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
-        datasets: [{
-          data: [15339, 21345, 18483, 24003, 23489, 24092, 12034],
-          lineTension: 0,
-          backgroundColor: 'transparent',
-          borderColor: '#007bff',
-          borderWidth: 4,
-          pointBackgroundColor: '#007bff'
-        }]
-      },
-      options: {
-        scales: {
-          yAxes: [{
-            ticks: {
-              beginAtZero: false
-            }
-          }]
-        },
-        legend: {
-          display: false,
-        }
-      }
-    });
-  </script>
 </body>
 
 </html>

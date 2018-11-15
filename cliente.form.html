@@ -7,10 +7,13 @@
     <meta name="author" content="">
     <link rel="icon" href="favicon.ico">
 
-    <title>Dashboard Template for Bootstrap</title>
+    <title>TechMix - Sistema para lojas de informatica</title>
 
     <!-- Bootstrap core CSS -->
     <link href="dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 
     <!-- Custom styles for this template -->
     <link href="dashboard.css" rel="stylesheet">
@@ -18,7 +21,7 @@
 
   <body>
     <nav class="navbar navbar-dark fixed-top bg-dark flex-md-nowrap p-0 shadow">
-      <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="#">Pedidex</a>
+      <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="index.html">TechMix</a>
       
       <ul class="navbar-nav px-3">
         <li class="nav-item text-nowrap">
@@ -30,39 +33,39 @@
     <div class="container-fluid">
       <div class="row">
         <nav class="col-md-2 d-none d-md-block bg-light sidebar">
-          <div class="sidebar-sticky">
-            <ul class="nav flex-column">
-              <li class="nav-item">
-                <a class="nav-link" href="index.html">
-                  <span data-feather="home"></span>
-                  Dashboard <span class="sr-only">(current)</span>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="pedidos.html">
-                  <span data-feather="file"></span>
-                  Pedidos
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="produtos.html">
-                  <span data-feather="shopping-cart"></span>
-                  Produtos
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" href="clientes.html">
-                  <span data-feather="users"></span>
-                  Clientes
-                </a>
-              </li>
-            </ul>
-          </div>
-        </nav>
+        <div class="sidebar-sticky">
+          <ul class="nav flex-column">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">
+                <span class="fa fa-home"></span>
+                Dashboard <span class="sr-only">(current)</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="pedidos.html">
+                <span class="fa fa-archive"></span>
+                Pedidos
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="produtos.html">
+                <span class="fa fa-shopping-cart"></span>
+                Produtos
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="clientes.html">
+                <span class="fa fa-users"></span>
+                Clientes
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
 
         <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
           <form>
-            <h2 class="mt-3">Novo Cliente</h2>
+            <h2 class="mt-3 mb-3">Novo Cliente</h2>
             <div class="form-group">
               <label>Nome</label>
               <input type="text" class="form-control" placeholder="Nome do cliente">
@@ -103,8 +106,14 @@
               </div>
             </div>
     
-            <button type="submit" class="btn btn-lg btn-primary">Salvar</button>
-            <a href="clientes.html" class="btn btn-danger">Cancelar</a>
+            <button type="submit" class="btn col-md-2 btn-primary">
+              <span class="fa fa-save"></span>
+            Salvar
+          </button>
+          <a href="clientes.html" class="btn btn-danger">
+            <span class="fa fa-ban"></span>
+          Cancelar
+        </a>
           </form>
         </main>
       </div>
@@ -118,42 +127,5 @@
     <script src="assets/js/vendor/popper.min.js"></script>
     <script src="dist/js/bootstrap.min.js"></script>
 
-    <!-- Icons -->
-    <script src="https://unpkg.com/feather-icons/dist/feather.min.js"></script>
-    <script>
-      feather.replace()
-    </script>
-
-    <!-- Graphs -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.min.js"></script>
-    <script>
-      var ctx = document.getElementById("myChart");
-      var myChart = new Chart(ctx, {
-        type: 'line',
-        data: {
-          labels: ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
-          datasets: [{
-            data: [15339, 21345, 18483, 24003, 23489, 24092, 12034],
-            lineTension: 0,
-            backgroundColor: 'transparent',
-            borderColor: '#007bff',
-            borderWidth: 4,
-            pointBackgroundColor: '#007bff'
-          }]
-        },
-        options: {
-          scales: {
-            yAxes: [{
-              ticks: {
-                beginAtZero: false
-              }
-            }]
-          },
-          legend: {
-            display: false,
-          }
-        }
-      });
-    </script>
   </body>
 </html>
