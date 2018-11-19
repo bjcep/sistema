@@ -13,8 +13,8 @@
   <!-- Bootstrap core CSS -->
   <link href="dist/css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Font awesome -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+  <!-- Font awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 
   <!-- Custom styles for this template -->
   <link href="dashboard.css" rel="stylesheet">
@@ -43,7 +43,7 @@
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="pedidos.html">
+              <a class="nav-link" href="pedido.form.html">
                 <span class="fa fa-archive"></span>
                 Pedidos
               </a>
@@ -83,43 +83,57 @@
             </div>
           </div>
 
-            <div class="form-group col-md-12">
-              <label for="inputCity">Preço</label>
-              <input type="text" class="form-control" id="inputCity" placeholder="Preço do produto EX: R$ 1000,00">
-            </div>
-            <div class="form-group col-md-12">
-              <label for="inputCity">Estoque</label>
-              <input type="text" class="form-control" id="inputCity" placeholder="Quantidade disponível no estoque EX: 35">
-            </div>
-            <div class="form-group col-md-12">
-              <label for="inputEmail4">Código</label>
-              <input type="text" class="form-control" id="inputEmail4" placeholder="Código do produto">
-            </div>
+          <div class="form-group col-md-12">
+            <label for="inputCity">Preço</label>
+            <input type="text" class="form-control" id="inputCity" placeholder="Preço do produto EX: R$ 1000,00">
+          </div>
+          <div class="form-group col-md-12">
+            <label for="inputCity">Estoque</label>
+            <input type="text" class="form-control" id="inputCity" placeholder="Quantidade disponível no estoque EX: 35">
+          </div>
+          <div class="form-group col-md-12">
+            <label for="inputEmail4">Código</label>
+            <input type="text" class="form-control" id="inputEmail4" placeholder="Código do produto">
+          </div>
 
 
           <button type="submit" class="btn col-md-2 btn-primary">
-              <span class="fa fa-save"></span>
+            <span class="fa fa-save"></span>
             Salvar
           </button>
           <a href="clientes.html" class="btn btn-danger">
             <span class="fa fa-ban"></span>
-          Cancelar
-        </a>
+            Cancelar
+          </a>
         </form>
+        <div class="btn-toolbar mb-2 ml-auto">
+
+          
+          <button type="button" class=" right btn btn-primary ml-auto" data-toggle="modal" data-target=".bd-example-modal-lg">Modal grande</button>
+
+          <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                ...
+              </div>
+            </div>
+          </div>
+        </div>
+
       </main>
     </div>
   </div>
 
   <!-- Bootstrap core JavaScript
     ================================================== -->
-  <!-- Placed at the end of the document so the pages load faster -->
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
     crossorigin="anonymous"></script>
-  <script>window.jQuery || document.write('<script src="assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
-  <script src="assets/js/vendor/popper.min.js"></script>
-  <script src="dist/js/bootstrap.min.js"></script>
+    <script>window.jQuery || document.write('<script src="assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+    <script src="assets/js/vendor/popper.min.js"></script>
+    <script src="dist/js/bootstrap.min.js"></script>
 
 
-</body>
+  </body>
 
-</html>
+  </html>
