@@ -1,38 +1,38 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="icon" href="favicon.ico">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <link rel="icon" href="favicon.ico">
 
-    <title>TechMix - Sistema para lojas de informatica</title>
+  <title>TechMix - Sistema para lojas de informatica</title>
 
-    <!-- Bootstrap core CSS -->
-    <link href="dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap core CSS -->
+  <link href="dist/css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Font awesome -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+  <!-- Font awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 
-    <!-- Custom styles for this template -->
-    <link href="dashboard.css" rel="stylesheet">
-  </head>
+  <!-- Custom styles for this template -->
+  <link href="dashboard.css" rel="stylesheet">
+</head>
 
-  <body>
-    <nav class="navbar navbar-dark fixed-top bg-dark flex-md-nowrap p-0 shadow">
-      <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="#">TechMix</a>
-      
-      <ul class="navbar-nav px-3">
-        <li class="nav-item text-nowrap">
-          <a class="nav-link" href="#">Sair</a>
-        </li>
-      </ul>
-    </nav>
+<body>
+  <nav class="navbar navbar-dark fixed-top bg-dark flex-md-nowrap p-0 shadow">
+    <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="#">TechMix</a>
 
-    <div class="container-fluid">
-      <div class="row">
-        <nav class="col-md-2 d-none d-md-block bg-light sidebar">
+    <ul class="navbar-nav px-3">
+      <li class="nav-item text-nowrap">
+        <a class="nav-link" href="#">Sair</a>
+      </li>
+    </ul>
+  </nav>
+
+  <div class="container-fluid">
+    <div class="row">
+      <nav class="col-md-2 d-none d-md-block bg-light sidebar">
         <div class="sidebar-sticky">
           <ul class="nav flex-column">
             <li class="nav-item">
@@ -42,9 +42,15 @@
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="pedido.form.html">
+              <a class="nav-link" href="pedidos.html">
                 <span class="fa fa-archive"></span>
                 Pedidos
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="reserva.html">
+                <span class="fa fa-book-open"></span>
+                Reservas
               </a>
             </li>
             <li class="nav-item">
@@ -63,19 +69,61 @@
         </div>
       </nav>
 
-        <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
-          
-.        </main>
-      </div>
+      <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
+
+         <div class="btn-toolbar justify-content-between" role="toolbar" aria-label="Toolbar com grupos de botões">
+
+          <div class="card p-5" style="width: 18rem;">
+            <div class="card-body">
+              <h5 class="card-title text-center">Clientes</h5>
+              <p class="card-text text-center">Aba para adicionar e editar os Clientes</p>
+              <a href="#" class="btn btn-outline-primary col-md-12">Visitar</a>
+            </div>
+          </div>
+
+          <div class="card p-5" style="width: 18rem;">
+            <div class="card-body">
+              <h5 class="card-title text-center">Pedidos</h5>
+              <p class="card-text text-center">Aba para adicionar e editar os Clientes</p>
+              <a href="#" class="btn btn-outline-primary col-md-12">Visitar</a>
+            </div>
+          </div>
+
+          <div class="card p-5" style="width: 18rem;">
+            <div class="card-body">
+              <h5 class="card-title text-center">Produtos</h5>
+              <p class="card-text text-center">Aba para adicionar e editar os Clientes</p>
+              <a href="#" class="btn btn-outline-primary col-md-12">Visitar</a>
+            </div>
+          </div>
+
+          <div class="card p-5" style="width: 18rem;">
+            <div class="card-body">
+              <h5 class="card-title text-center">Clientes</h5>
+              <p class="card-text text-center">Aba para adicionar e editar os Clientes</p>
+              <a href="#" class="btn btn-outline-primary col-md-12">Visitar</a>
+            </div>
+          </div>
+
+          <div class="card p-5" style="width: 18rem;">
+            <div class="card-body">
+              <h5 class="card-title text-center">Clientes</h5>
+              <p class="card-text text-center">Aba para adicionar e editar os Clientes</p>
+              <a href="#" class="btn btn-outline-primary col-md-12">Visitar</a>
+            </div>
+          </div>
+        </div>
+      </main>
     </div>
+  </div>
 
     <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script>window.jQuery || document.write('<script src="assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
-    <script src="assets/js/vendor/popper.min.js"></script>
-    <script src="dist/js/bootstrap.min.js"></script>
+      ================================================== -->
+      <!-- Placed at the end of the document so the pages load faster -->
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+      <script>window.jQuery || document.write('<script src="assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+      <script src="assets/js/vendor/popper.min.js"></script>
+      <script src="dist/js/bootstrap.min.js"></script>
 
-  </body>
-</html>
+    </body>
+    </html>

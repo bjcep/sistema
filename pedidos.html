@@ -13,8 +13,8 @@
   <!-- Bootstrap core CSS -->
   <link href="dist/css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Font awesome -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+  <!-- Font awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 
   <!-- Custom styles for this template -->
   <link href="dashboard.css" rel="stylesheet">
@@ -43,9 +43,15 @@
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="pedidos.html">
+              <a class="nav-link active" href="pedidos.html">
                 <span class="fa fa-archive"></span>
                 Pedidos
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="reserva.html">
+                <span class="fa fa-book-open"></span>
+                Reservas
               </a>
             </li>
             <li class="nav-item">
@@ -54,8 +60,8 @@
                 Produtos
               </a>
             </li>
-            <li class="nav-item active">
-              <a class="nav-link active" href="clientes.html">
+            <li class="nav-item">
+              <a class="nav-link" href="clientes.html">
                 <span class="fa fa-users"></span>
                 Clientes
               </a>
@@ -66,167 +72,49 @@
 
       <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
         <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2">
-          <h1 class="h2">Listagem de Clientes</h1>
-          <div class="btn-toolbar mb-2 mb-md-0">
-
-            <a href="cliente.form.html" class="btn btn-sm btn-outline-success">
-              <span class="fa fa-plus"></span>
-              Novo Cliente
-            </a>
-          </div>
+          <h1 class="h2">Listagem de Pedidos</h1>
+          
         </div>
         <div class="table-responsive">
-          <table class="table table-striped table-sm">
+          <table class="table table-striped table-sm ">
             <thead>
               <tr>
-                <th>#</th>
-                <th>Nome</th>
-                <th>Telefone</th>
-                <th>E-mail</th>
-                <th></th>
+                <th>Codigo do pedido</th>
+                <th>Cliente #</th>
+                <th>Descrição</th>
+                <th>Valor</th>
+                <th>Estado de pagamento</th>
+                <th>Data do pedido</th>
               </tr>
             </thead>
             <tbody>
               <tr>
+                <td>777</td>
                 <td>1001</td>
-                <td>João da Silva</td>
-                <td>(48) 99832-1687</td>
-                <td>joao.silva@gmail.com</td>
+                <td>amd forninhu 4k</td>
+                <td>R$ 200.00</td>
+                <td>Pago</td>
+                <td>18\11\2018 15:36</td>
                 <td class="text-right">
-                  <a href="#" class="btn btn-sm btn-info py-0">E</a>
-                  <a href="#" class="btn btn-sm btn-danger py-0">X</a>
+                  <a href="pedido.form.html" class="btn btn-sm btn-info py-0">
+                    <span class="fa fa-edit"></span>
+                  </a>
+                  <a href="#" class="btn btn-sm btn-danger py-0">
+                    <span class="fa fa-times"></span>
+                  </a>
                 </td>
               </tr>
-              <tr>
-                <td>1001</td>
-                <td>João da Silva</td>
-                <td>(48) 99832-1687</td>
-                <td>joao.silva@gmail.com</td>
-                <td class="text-right">
-                  <a href="#" class="btn btn-sm btn-info py-0">E</a>
-                  <a href="#" class="btn btn-sm btn-danger py-0">X</a>
-                </td>
-              </tr>
-              <tr>
-                <td>1001</td>
-                <td>João da Silva</td>
-                <td>(48) 99832-1687</td>
-                <td>joao.silva@gmail.com</td>
-                <td class="text-right">
-                  <a href="#" class="btn btn-sm btn-info py-0">E</a>
-                  <a href="#" class="btn btn-sm btn-danger py-0">X</a>
-                </td>
-              </tr>
-              <tr>
-                <td>1001</td>
-                <td>João da Silva</td>
-                <td>(48) 99832-1687</td>
-                <td>joao.silva@gmail.com</td>
-                <td class="text-right">
-                  <a href="#" class="btn btn-sm btn-info py-0">E</a>
-                  <a href="#" class="btn btn-sm btn-danger py-0">X</a>
-                </td>
-              </tr>
-              <tr>
-                <td>1001</td>
-                <td>João da Silva</td>
-                <td>(48) 99832-1687</td>
-                <td>joao.silva@gmail.com</td>
-                <td class="text-right">
-                  <a href="#" class="btn btn-sm btn-info py-0">E</a>
-                  <a href="#" class="btn btn-sm btn-danger py-0">X</a>
-                </td>
-              </tr>
-              <tr>
-                <td>1001</td>
-                <td>João da Silva</td>
-                <td>(48) 99832-1687</td>
-                <td>joao.silva@gmail.com</td>
-                <td class="text-right">
-                  <a href="#" class="btn btn-sm btn-info py-0">E</a>
-                  <a href="#" class="btn btn-sm btn-danger py-0">X</a>
-                </td>
-              </tr>
-              <tr>
-                <td>1001</td>
-                <td>João da Silva</td>
-                <td>(48) 99832-1687</td>
-                <td>joao.silva@gmail.com</td>
-                <td class="text-right">
-                  <a href="#" class="btn btn-sm btn-info py-0">E</a>
-                  <a href="#" class="btn btn-sm btn-danger py-0">X</a>
-                </td>
-              </tr>
-              <tr>
-                <td>1001</td>
-                <td>João da Silva</td>
-                <td>(48) 99832-1687</td>
-                <td>joao.silva@gmail.com</td>
-                <td class="text-right">
-                  <a href="#" class="btn btn-sm btn-info py-0">E</a>
-                  <a href="#" class="btn btn-sm btn-danger py-0">X</a>
-                </td>
-              </tr>
-              <tr>
-                <td>1001</td>
-                <td>João da Silva</td>
-                <td>(48) 99832-1687</td>
-                <td>joao.silva@gmail.com</td>
-                <td class="text-right">
-                  <a href="#" class="btn btn-sm btn-info py-0">E</a>
-                  <a href="#" class="btn btn-sm btn-danger py-0">X</a>
-                </td>
-              </tr>
-              <tr>
-                <td>1001</td>
-                <td>João da Silva</td>
-                <td>(48) 99832-1687</td>
-                <td>joao.silva@gmail.com</td>
-                <td class="text-right">
-                  <a href="#" class="btn btn-sm btn-info py-0">E</a>
-                  <a href="#" class="btn btn-sm btn-danger py-0">X</a>
-                </td>
-              </tr>
-              <tr>
-                <td>1001</td>
-                <td>João da Silva</td>
-                <td>(48) 99832-1687</td>
-                <td>joao.silva@gmail.com</td>
-                <td class="text-right">
-                  <a href="#" class="btn btn-sm btn-info py-0">E</a>
-                  <a href="#" class="btn btn-sm btn-danger py-0">X</a>
-                </td>
-              </tr>
-              <tr>
-                <td>1001</td>
-                <td>João da Silva</td>
-                <td>(48) 99832-1687</td>
-                <td>joao.silva@gmail.com</td>
-                <td class="text-right">
-                  <a href="#" class="btn btn-sm btn-info py-0">E</a>
-                  <a href="#" class="btn btn-sm btn-danger py-0">X</a>
-                </td>
-              </tr>
-              <tr>
-                <td>1001</td>
-                <td>João da Silva</td>
-                <td>(48) 99832-1687</td>
-                <td>joao.silva@gmail.com</td>
-                <td class="text-right">
-                  <a href="#" class="btn btn-sm btn-info py-0">E</a>
-                  <a href="#" class="btn btn-sm btn-danger py-0">X</a>
-                </td>
-              </tr>
-
             </tbody>
           </table>
         </div>
 
+        
+
         <div class="btn-toolbar justify-content-between" role="toolbar" aria-label="Toolbar com grupos de botões">
-            <form class="form-inline my-2 my-lg-0">
-                <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar" aria-label="Pesquisar">
-                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Pesquisar</button>
-              </form>
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar" aria-label="Pesquisar">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Pesquisar</button>
+          </form>
           <nav aria-label="Navegação de página exemplo">
             <ul class="pagination justify-content pt-3">
               <li class="page-item disabled">
@@ -248,12 +136,12 @@
 
   <!-- Bootstrap core JavaScript
     ================================================== -->
-  <!-- Placed at the end of the document so the pages load faster -->
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
     crossorigin="anonymous"></script>
-  <script>window.jQuery || document.write('<script src="assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
-  <script src="assets/js/vendor/popper.min.js"></script>
-  <script src="dist/js/bootstrap.min.js"></script>
-</body>
+    <script>window.jQuery || document.write('<script src="assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+    <script src="assets/js/vendor/popper.min.js"></script>
+    <script src="dist/js/bootstrap.min.js"></script>
+  </body>
 
-</html>
+  </html>
